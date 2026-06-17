@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useCallback, useMemo, useState } from 'react'
 import { initialTimeline } from '../data/initialTimeline.js'
 import { TimelineContext } from './timelineContext.js'
 const storageKey = 'keenkeeper.timeline'
@@ -15,7 +15,7 @@ function readStoredTimeline() {
 export function TimelineProvider({ children }) {
   const [timeline, setTimeline] = useState(readStoredTimeline)
 
-  const addEntry = ({ friendName, type }) => {
+  const addEntry = useCallback(({ friendName, type }) => {
     const entry = {
       id: crypto.randomUUID(),
       type,
@@ -31,9 +31,9 @@ export function TimelineProvider({ children }) {
     })
 
     return entry
-  }
+  }, [])
 
-  const value = useMemo(() => ({ timeline, addEntry }), [timeline])
+  const value = useMemo(() => ({ timeline, addEntry }), [timeline, addEntry])
 
   return (
     <TimelineContext.Provider value={value}>{children}</TimelineContext.Provider>
