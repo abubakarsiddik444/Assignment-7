@@ -14,35 +14,40 @@ export default function Stats() {
     value: timeline.filter((entry) => entry.type === type).length,
     type,
   }))
+  const totalInteractions = data.reduce((sum, item) => sum + item.value, 0)
 
   return (
     <div className="page-wrap stats-page">
       <h1>Friendship Analytics</h1>
-      <article className="analytics-panel">
-        <h2>By Interaction Type</h2>
-        <div className="chart-wrap">
-          <ResponsiveContainer width="100%" height={280}>
-            <PieChart>
-              <Pie
-                data={data}
-                dataKey="value"
-                nameKey="name"
-                innerRadius={68}
-                outerRadius={100}
-                paddingAngle={6}
-                stroke="#ffffff"
-                strokeWidth={5}
-              >
-                {data.map((entry) => (
-                  <Cell fill={colors[entry.type]} key={entry.type} />
-                ))}
-              </Pie>
-              <Tooltip />
-              <Legend iconType="circle" />
-            </PieChart>
-          </ResponsiveContainer>
-        </div>
-      </article>
+      {totalInteractions === 0 ? (
+        <p className="empty-state">No interactions recorded yet. Start logging your interactions!</p>
+      ) : (
+        <article className="analytics-panel">
+          <h2>By Interaction Type</h2>
+          <div className="chart-wrap">
+            <ResponsiveContainer width="100%" height={280}>
+              <PieChart>
+                <Pie
+                  data={data}
+                  dataKey="value"
+                  nameKey="name"
+                  innerRadius={68}
+                  outerRadius={100}
+                  paddingAngle={6}
+                  stroke="#ffffff"
+                  strokeWidth={5}
+                >
+                  {data.map((entry) => (
+                    <Cell fill={colors[entry.type]} key={entry.type} />
+                  ))}
+                </Pie>
+                <Tooltip />
+                <Legend iconType="circle" />
+              </PieChart>
+            </ResponsiveContainer>
+          </div>
+        </article>
+      )}
     </div>
   )
 }

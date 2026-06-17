@@ -25,9 +25,13 @@ export default function Timeline() {
         </select>
       </label>
       <section className="timeline-list" aria-label="Interaction timeline">
-        {filteredTimeline.map((entry) => (
-          <TimelineEntry entry={entry} key={entry.id} />
-        ))}
+        {filteredTimeline.length === 0 ? (
+          <p className="empty-state">No interactions found. Start reaching out!</p>
+        ) : (
+          filteredTimeline.map((entry) => (
+            <TimelineEntry entry={entry} key={entry.id} />
+          ))
+        )}
       </section>
     </div>
   )

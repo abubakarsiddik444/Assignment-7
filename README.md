@@ -1,16 +1,40 @@
-# React + Vite
+# KeenKeeper
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+KeenKeeper is a responsive React relationship tracker for keeping meaningful friendships active. It shows friend cards, contact goals, a shared interaction timeline, and friendship analytics in a clean dashboard-style interface.
 
-Currently, two official plugins are available:
+## Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React.js
+- Vite
+- React Router DOM
+- Recharts
+- CSS3 responsive grid and flex layouts
+- Local Storage for timeline persistence
 
-## React Compiler
+## Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Friend dashboard with summary cards, status colors, tags, and profile navigation.
+- Friend details page with contact goals, action buttons, and quick check-ins for Call, Text, and Video.
+- Timeline page with interaction filtering and newest-first sorting.
+- Friendship Analytics page with a Recharts pie chart for Call, Text, and Video activity.
+- 404 page, loading animation, toast notifications, and deploy-safe hash routing.
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- `src/components` contains reusable UI such as Navbar, Footer, FriendCard, TimelineEntry, and shared badges.
+- `src/pages` contains Home, Friend Details, Timeline, Stats, and Not Found routes.
+- `src/context` contains timeline and toast state providers.
+- `public/data/friends.json` contains realistic friend profile data.
+
+## Run Locally
+
+```bash
+npm install
+npm run dev
+```
+
+## Build
+
+```bash
+npm run build
+```
