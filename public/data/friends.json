@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "David Kim",
+    "picture": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80",
+    "email": "david.kim@example.com",
+    "days_since_contact": 18,
+    "status": "almost due",
+    "tags": ["work", "mentor"],
+    "bio": "Former teammate who helped me grow as a frontend developer.",
+    "goal": 21,
+    "next_due_date": "2026-06-20"
+  },
+  {
+    "id": 2,
+    "name": "Emma Wilson",
+    "picture": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&q=80",
+    "email": "emma.wilson@example.com",
+    "days_since_contact": 32,
+    "status": "overdue",
+    "tags": ["family", "close friend"],
+    "bio": "Cousin and movie-night partner who always checks in after big weeks.",
+    "goal": 30,
+    "next_due_date": "2026-06-15"
+  },
+  {
+    "id": 3,
+    "name": "Lisa Nakamura",
+    "picture": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=300&q=80",
+    "email": "lisa.nakamura@example.com",
+    "days_since_contact": 9,
+    "status": "on-track",
+    "tags": ["college", "design"],
+    "bio": "Met in university during a design sprint and still swaps project ideas.",
+    "goal": 14,
+    "next_due_date": "2026-06-22"
+  },
+  {
+    "id": 4,
+    "name": "James Wright",
+    "picture": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=300&q=80",
+    "email": "james.wright@example.com",
+    "days_since_contact": 27,
+    "status": "almost due",
+    "tags": ["travel", "hobby"],
+    "bio": "Weekend hiking buddy who shares route notes and travel stories.",
+    "goal": 30,
+    "next_due_date": "2026-06-20"
+  },
+  {
+    "id": 5,
+    "name": "Sarah Chen",
+    "picture": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=300&q=80",
+    "email": "sarah.chen@example.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["school", "study"],
+    "bio": "Study partner from programming class who shares useful learning resources.",
+    "goal": 10,
+    "next_due_date": "2026-06-22"
+  },
+  {
+    "id": 6,
+    "name": "Marcus Johnson",
+    "picture": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80",
+    "email": "marcus.johnson@example.com",
+    "days_since_contact": 41,
+    "status": "overdue",
+    "tags": ["gym", "neighbor"],
+    "bio": "Old neighbor and gym friend who helped me keep a steady routine.",
+    "goal": 28,
+    "next_due_date": "2026-06-05"
+  },
+  {
+    "id": 7,
+    "name": "Priya Raman",
+    "picture": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=300&q=80",
+    "email": "priya.raman@example.com",
+    "days_since_contact": 13,
+    "status": "on-track",
+    "tags": ["book club", "close friend"],
+    "bio": "Book club friend who brings thoughtful recommendations to every chat.",
+    "goal": 21,
+    "next_due_date": "2026-06-25"
+  },
+  {
+    "id": 8,
+    "name": "Aisha Patel",
+    "picture": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=300&q=80",
+    "email": "aisha.patel@example.com",
+    "days_since_contact": 24,
+    "status": "almost due",
+    "tags": ["startup", "mentor"],
+    "bio": "Startup mentor who gives practical advice before interviews and demos.",
+    "goal": 28,
+    "next_due_date": "2026-06-21"
+  }
+]
